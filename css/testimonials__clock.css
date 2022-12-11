@@ -1,0 +1,13 @@
+.testimonials__clockContainer {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .testimonials__clockContainer-clock {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    color: var(--green-color);
+    font-style: normal;
+    font-weight: 700;
+  }

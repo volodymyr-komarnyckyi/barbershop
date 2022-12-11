@@ -1,0 +1,20 @@
+[
+    {
+       "id":1,
+       "title":"Beardcut",
+       "img":"img/seventh-hairstyle.jpg",
+       "price":"250 UAH"
+    },
+    {
+       "id":2,
+       "title":"Haircut",
+       "img":"img/fourth-hairstyle.jpg",
+       "price":"400 UAH"
+    },
+    {
+       "id":3,
+       "title":"Haircut and beardcut",
+       "img":"img/first_hairstyle.jpg",
+       "price":"600 UAH"
+    }
+ ]

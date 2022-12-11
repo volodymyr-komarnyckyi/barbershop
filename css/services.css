@@ -1,0 +1,72 @@
+.services__header {
+	background-image: linear-gradient(to bottom, black 0%, transparent 100%), url(../img/we_are_always.webp);
+	background-size: cover;
+	background-position: 50% 50%;
+	min-height: 300px;
+	margin: auto;
+    margin-bottom: 30px;
+	color: var(--white-color);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.services__header_text>h2 {
+	font-size: 54px;
+	color: var(--white-color);
+	font-family: Playfair Display, serif;
+	line-height: 2.5;
+	text-align: center;
+}
+
+.services__header_text>hr {
+	width: 70vw;
+	margin: auto;
+}
+
+.services__card__image {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.services__card__item {
+	margin: 15px auto;
+}
+
+.services__card__item>h3 {
+	margin-bottom: 10px;
+	font-size: 22px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+.services__card__item>p {
+	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 20px;
+	color: var(--green-color);
+}
+
+@media (min-width: 750px) {
+
+	.services__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
+
+	.services__card__image {
+		width: 45vw;
+	}
+}
+
+@media (min-width: 850px) {
+	.services__cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.services__card__image {
+		width: 30vw;
+	}
+}

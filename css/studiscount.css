@@ -1,0 +1,100 @@
+.discount {
+    position: relative;
+    margin: auto;
+  }
+  
+  .discount__background {
+    margin: 0 auto;
+    padding: 60px 24px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(
+        rgba(26, 27, 32, 0.8),
+        rgba(26, 27, 32, 0.8)
+      ),
+      url(../img/scisers.webp);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .main__discount__title {
+    padding: 0ch 0px 10px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 36px;
+    font-stretch: 100%;
+    font-family: Playfair Display, serif;
+    font-style: normal;
+    font-weight: 700;
+  
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  
+  .main__discount__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
+  .main__discount__title__box:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin: auto;
+    background-color: var(--green-color);
+  }
+  
+  .main__discount__text__box {
+    margin: 10px;
+  }
+  
+  .main__discount__text {
+    color: var(--white-color);
+    text-align: center;
+  
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  
+  .main__discount__text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
+  }
+  
+  .main__discount__button {
+    border: 3px solid var(--green-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
+    display: table;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    margin: auto;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: top;
+    cursor: pointer;
+  
+    transition: background 0.3s linear;
+  }
+  
+  .main__discount__button:hover{
+    border-color: var(--black-color);
+    background-color: var(--black-color);
+    color: var(--green-color);
+  }
+  
+  .main__discount__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+  

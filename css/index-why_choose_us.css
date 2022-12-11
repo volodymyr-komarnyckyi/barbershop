@@ -1,0 +1,141 @@
+.company__benefits {
+    background: linear-gradient(rgba(39, 37, 35, 0.7), rgba(39, 37, 35, 0.7)), url(../img/background-block3.webp);
+    padding: 80px 0px;
+}
+
+.why__choose__us {
+    padding: 0px 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.why__choose__us__title {
+    position: relative;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.why__choose__us__title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin: auto;
+    background-color: var(--green-color);
+}
+
+.preferences {
+    margin: 45px auto;
+    padding: 0;
+}
+
+.why__choose__us__images {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.first__preference,
+.second__preference,
+.third__preference,
+.fourth__preference {
+    position: relative;
+    padding: 0px 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.preferences__title {
+    color: var(--white-color);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 27.2px;
+    font-style: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 480px) {
+
+    .company__benefits,
+    .why__choose__us__title {
+        position: relative;
+    }
+
+    .why__choose__us__title {
+        font-size: 38px;
+    }
+
+    .preferences {
+        margin-top: 45px;
+        max-width: 1200px;
+    }
+
+    .preferences__title {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .company__benefits {
+        padding: 80px 0px 95px 0px;
+    }
+
+    .preferences {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        max-width: 75%;
+        justify-content: space-evenly;
+    }
+
+
+    .why__choose__us__images {
+        width: 70px;
+    }
+}
+
+
+@media (min-width: 991px) {
+
+    .why__choose__us {
+        padding: 0px 15px;
+        max-width: 1200px;
+    }
+
+    .why__choose__us__images {
+        width: 70px;
+    }
+
+    .why__choose__us__title {
+        font-size: 54px;
+    }
+
+    .preferences {
+        max-width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    .first__preference,
+    .second__preference,
+    .third__preference,
+    .fourth__preference {
+        margin-top: 0px;
+    }
+}

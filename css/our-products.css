@@ -1,0 +1,153 @@
+.section {
+    background: url(../img/background-block3.webp);
+    position: relative;
+    padding: 80px 0 90px;
+  }
+  
+  .section__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 24px 0;
+  }
+  
+  .products__title {
+    color: var(--white-color);
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: auto;
+  }
+  
+  .products__title:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin: auto;
+  
+    background-color: var(--green-color);
+  }
+  
+  .products__subtitle {
+    color: var(--white-accent-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  
+    max-width: 100%;
+    width: 272px;
+  }
+  
+  .card {
+    margin-top: 50px;
+  }
+  
+  .card__inner {
+    position: relative;
+  }
+  
+  .card__img {
+    width: 272px;
+    display: block;
+  }
+  
+  .card__description {
+    color: var(--white-color);
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .card__link {
+    width: 100px;
+    margin-top: 27px;
+    text-decoration: none;
+    color: var(--green-color);
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .card__link:last-child {
+    margin-bottom: 50px;
+  }
+  
+  .card__link:hover {
+    cursor: pointer;
+    color: var(--white-color);
+    text-decoration: underline;
+  }
+  
+  .cards__btn {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 3px solid var(--green-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    transition: background 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: var(--green-color);
+  }
+  
+  @media (min-width: 375px) {
+    .card__img {
+      width: 327px;
+    }
+  }
+  
+  @media (min-width: 425px) {
+    .card__img {
+      width: 378px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .products__title {
+      font-size: 46px;
+    }
+  
+    .products__subtitle {
+      max-width: 100%;
+      width: auto;
+    }
+  
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px 20px;
+    }
+  
+    .card__description {
+      font-size: 24px;
+    }
+  
+    .card__link {
+      font-weight: 700;
+    }
+  
+    .card__img {
+      min-height: 328px;
+      width: 337px;
+    }
+  }
+  

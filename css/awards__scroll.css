@@ -1,0 +1,33 @@
+.awards__header {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.awards__header._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.awards__text {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.awards__text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.awards__img {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.awards__img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+

@@ -1,0 +1,87 @@
+.welcome__to__barbershop {
+	text-align: left;
+	margin: 50px 20px;
+}
+
+.welcome__textblock__header {
+	font-size: 40px;
+	font-family: "Playfair Display", serif;
+	font-weight: 700;
+	line-height: 1em;
+	color: var(--title-brown-color);
+	transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.welcome__textblock__header._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+  }
+
+.welcome__textblock>p {
+	font-size: 16px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin-top: 15px;
+	line-height: 1.8em;
+}
+
+.welcome__image {
+	margin: 20px auto;
+}
+
+.welcome__image>img {
+	width: 100%;
+}
+
+.welcome__textblock__header::after{
+	content: "";
+	display: block;
+	height: 2px;
+	width: 45px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: var(--green-color);
+}
+
+#welcome__button {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 700;
+    border: 2px solid var(--green-color);
+    padding: 13px 30px;
+    display: block;
+    margin: 20px auto 30px 0;
+    width: fit-content;
+
+	transition: background 0.3s linear;
+}
+
+#welcome__button:hover {
+    background-color: var(--green-color);
+    color: var(--white-color); 
+}
+
+@media (min-width: 770px) {
+	.welcome__to__barbershop>.container {
+		display: flex;
+	}
+
+	.welcome__image {
+		width: 350px;
+		margin-right: 20px;
+		margin-left: 50px;
+	}
+
+	.welcome__image,
+	.welcome__textblock {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 950px) {
+	.welcome__textblock {
+		margin-top: 40px;
+	}
+}

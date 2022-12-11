@@ -1,0 +1,187 @@
+.booking {
+    position: relative;
+  }
+  
+  .booking__background {
+    margin: 0 auto;
+    padding: 60px 24px;
+    position: static;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(26, 27, 32, 0.8),
+        rgba(26, 27, 32, 0.8)
+      ),
+      url(../img/background-form.png);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .booking__header {
+    font-size: inherit;
+    color: #272523;
+    font-family: Playfair Display, serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 39px 47px 0px 47px;
+    display: grid;
+  }
+  
+  .booking__header__title {
+    font-weight: 700;
+      margin: auto;
+      color: var(--white-color);
+      padding-bottom: 10px;
+      text-align: center;
+       transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  
+  .booking__header__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  
+  .booking__header:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin: auto;
+    background-color: var(--green-color);
+  }
+  
+  .booking__text {
+    justify-content: center;
+    margin: 0px 47px 0px 47px;
+  }
+  
+  .booking__text > p {
+    font-size: inherit;
+    color: #acacac;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .booking__text__content {
+  transform: scale(0);
+    transition: all 1.8s ease 0s;
+  }
+  
+  .booking__text__content._active {
+   transform: scale(1);
+  }
+  
+  .booking__form {
+    margin-top: 25px;
+    text-align: -webkit-center;
+  }
+  
+  .booking__form__string {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(39, 37, 35, 0.12);
+    display: flex;
+    width: auto;
+    margin-top: 12px;
+    font-family: inherit;
+    padding: 13px 20px;
+    font-size: 20px;
+    line-height: 1.54;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none;
+    background-color: -internal-light-dark(
+      rgb(232, 240, 254),
+      rgba(70, 90, 126, 0.4)
+    );
+    color: fieldtext;
+  }
+  
+  .booking__form___field {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .booking__form__button__box {
+    border: 3px solid var(--green-color);
+    background-color: var(--green-color);
+    display: table;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 8px 30px;
+    position: relative;
+    vertical-align: top;
+  }
+  
+  .booking__form__button {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white-color);
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: var(--green-color);
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 0px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    cursor: pointer;
+  }
+  
+  .form__title {
+    color: var(--black-color);
+    font-family: "Playfair Display", serif;
+    font-size: 54px;
+    font-weight: 700;
+  }
+  
+  .form__description {
+    color: var(--black-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .input__inner {
+    background-color: var(--input-bg-color);
+  }
+  
+  .form__btn {
+    border: none;
+    color: var(--white-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: var(--green-color);
+  }
+  
+  #contact-form-status {
+    color: white;
+  }
+  

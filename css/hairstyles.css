@@ -1,0 +1,234 @@
+.hairstyles__main {
+    margin: 0 auto;
+    padding: 60px 24px;
+    position: static;
+    width: 100%;
+    background: linear-gradient(rgba(26, 27, 32, 0.8), rgba(26, 27, 32, 0.8)), url(../img/background-hairstyles.webp) 52.5% 0% / cover no-repeat fixed;
+}
+
+.hairstyles__block {
+    padding: 45px 0px;
+}
+
+.hairstyles__block>hr {
+    background-color: gray;
+    opacity: 0.3;
+}
+
+.hairstyles__title {
+    color: var(--white-color);
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-stretch: 100%;
+    font-weight: 700;
+    padding: 45px 15px;
+    position: relative;
+    text-align: center;
+}
+
+.hairstyles__title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: currentColor;
+    opacity: .3;
+}
+
+.hairstyles__title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    opacity: .3;
+}
+
+
+.hairstyles__title__span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 45px;
+    margin: auto;
+    background-color: #3fb386;
+}
+
+
+.hairstyle__description {
+    margin: 90px 0px;
+    display: flex;
+}
+
+
+.hairstyle__article {
+    width: 100%;
+    padding: 0px 24px;
+    margin-top: 50px;
+}
+
+.hairstyles_image {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hairstyles__name {
+    color: var(--black-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.hairstyles__author {
+    color: var(--green-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 22.8px;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+@media (min-width: 375px) {
+
+    .hairstyles__main {
+        padding: 80px 24px;
+    }
+
+    .hairstyles_image {
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 480px) {
+
+    .hairstyles_image {
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hairstyles__main {
+        padding: 80px 0px;
+    }
+
+    .hairstyles__block {
+        padding: 0px 32px;
+    }
+
+    .hairstyles_image {
+        position: relative;
+        width: 337px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .popular__hairstyles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hairstyle__article {
+        max-width: 50%;
+    }
+
+    .hairstyles__title__span {
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .popular__hairstyles {
+        max-width: 1200px;
+    }
+
+    .hairstyles__block {
+        padding: 0px 40px;
+    }
+
+    .hairstyles__title__box {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+
+    .hairstyles__title {
+        font-size: 54px;
+        padding: 60px 0px;
+    }
+
+    .hairstyles__name {
+        line-height: 33.8px;
+        position: relative;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .hairstyles_image {
+        position: relative;
+        width: 206px;
+        height: 193px;
+        object-fit: cover;
+    }
+
+    .hairstyle__article {
+        max-width: 25%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .hairstyles__title__span {
+        font-size: 54px;
+    }
+
+    .hairstyle__description {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .popular__hairstyles {
+        padding: 0px 15px;
+    }
+
+    .hairstyles_image {
+        position: relative;
+        width: 100%;
+        height: 254px;
+        object-fit: cover;
+    }
+
+    .hairstyle__article {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .hairstyles__name {
+        font-size: 28px;
+    }
+
+    .hairstyles__author {
+        font-size: 18px;
+    }
+}

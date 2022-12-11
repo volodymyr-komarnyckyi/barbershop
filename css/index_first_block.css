@@ -1,0 +1,47 @@
+.main {
+    background: linear-gradient(rgba(26, 27, 32, 0.7), rgba(26, 27, 32, 0.7)), url(../img/background_block1.webp) 50.94% 13.58% / cover no-repeat;
+    color: var(--white-color);
+}
+
+.main__section {
+    padding: 130px 15px;
+}
+
+.main__header {
+    font-size: 52px;
+    font-family: Playfair Display, serif;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.main__span {
+    display: block;
+}
+
+.main__text {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.main__discount__button {
+    margin: auto;
+    border: 3px solid var(--green-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
+    display: table;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    padding: 18px 35px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: top;
+}

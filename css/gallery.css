@@ -1,0 +1,127 @@
+.gallery {
+  margin: auto;
+}
+
+.gallery__main {
+  text-align: center;
+  margin: auto;
+}
+
+.gallery__header {
+  font-size: 16px;
+  font-stretch: 100%;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__header__box {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__header__text__box {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.gallery__header__text__content {
+  margin: auto;
+}
+
+.gallery__main__title {
+  font-family: Playfair Display, serif;
+  font-size: 54px;
+}
+
+.p-3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #3fb386;
+    margin: auto;
+}
+
+.gallery__header__text__box::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background-color: #3fb386;
+  margin: auto;
+}
+
+.gallery__header__text__content {
+  padding: 10px;
+  text-align: center;
+  text-decoration-thickness: auto;
+  font-family: Playfair Display, serif;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.gallery__main__images__box {
+  width: 100%;
+  gap: 15px;
+  display: grid;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.gallery__header__text__content {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.gallery__header__text__content._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+@media (min-width: 732px) {
+  .gallery__main__images__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery__main__images__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.gallery__main__image__photo {
+  height: auto;
+  object-fit: cover;
+  object-position: 100% 50%;
+  display: block;
+  width: 100%;
+}
+
+.gallery__main__image {
+  transform: scale(0);
+  transition: all 1.8s ease 0s;
+}
+
+.gallery__main__image._active {
+  transform: scale(1);
+}
+
+.gallery__main__image._onhower {
+  transform: scale(1.2);
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+}
+.gallery__main__image._onout {
+  transform: scale(1);
+}
